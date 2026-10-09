@@ -1,117 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Employee table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML Table</title>
 
     <style>
-        /* Complete the CSS according to the assignment requirements */
-
         body {
-            width: 750px;
-            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .table-container {
+            max-width: 800px;
+            margin: auto;
+            overflow-x: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #ccc;
         }
 
         table {
-            /* Add table styling */
-        }
-
-        caption {
-            /* Style the caption */
-        }
-
-        thead, tfoot {
-            /* Header/footer background */
+            width: 100%;
+            border-collapse: collapse;
         }
 
         th, td {
-            /* Add borders, padding and alignment */
+            padding: 14px;
+            text-align: left;
+            border: 1px solid #ddd;
         }
 
-        .right {
-            /* Right-align numeric cells */
+        th {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
         }
 
-        .top {
-            /* Align department names to the top */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
 
-        /* Add alternating row styling */
+        tr:hover {
+            background-color: #d9ecff;
+            transition: 0.3s;
+        }
+
+        caption {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #444;
+        }
     </style>
 </head>
 
 <body>
+    <h2>Student Details</h2>
 
-<table>
-    <!-- Add the caption -->
+    <div class="table-container">
+        <table>
+            <caption>Student Information Table</caption>
 
-    <thead>
-        <tr>
-            <!-- Add the four column headings -->
-        </tr>
-    </thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Marks</th>
+            </tr>
 
-    <tbody>
+            <tr>
+                <td>101</td>
+                <td>Arun</td>
+                <td>Computer Science</td>
+                <td>85</td>
+            </tr>
 
-        <!-- Editorial: 3 employees -->
+            <tr>
+                <td>102</td>
+                <td>Priya</td>
+                <td>Information Technology</td>
+                <td>92</td>
+            </tr>
 
-        <tr>
-            <!-- Department cell should use rowspan -->
-            <td>Joel Murach</td>
-            <td>joelmurach@yahoo.com</td>
-            <td>22</td>
-        </tr>
+            <tr>
+                <td>103</td>
+                <td>Ravi</td>
+                <td>Electronics</td>
+                <td>78</td>
+            </tr>
 
-        <tr>
-            <td>Anne Boehm</td>
-            <td>anne@murach.com</td>
-            <td>34</td>
-        </tr>
-
-        <tr>
-            <td>Zak Ruvalcaba</td>
-            <td>zak@modulemedia.com</td>
-            <td>4</td>
-        </tr>
-
-        <!-- Marketing: 2 employees -->
-
-        <tr>
-            <!-- Add department cell -->
-            <td>Judy Taylor</td>
-            <td>judy@murach.com</td>
-            <td>39</td>
-        </tr>
-
-        <tr>
-            <td>Cyndi Vasquez</td>
-            <td>cyndi@murach.com</td>
-            <td>10</td>
-        </tr>
-
-        <!-- Customer Service: 2 employees -->
-
-        <tr>
-            <!-- Add department cell -->
-            <td>Kelly Slivkoff</td>
-            <td>kelly@murach.com</td>
-            <td>25</td>
-        </tr>
-
-        <tr>
-            <td>Juliette Baylon</td>
-            <td>juliette@murach.com</td>
-            <td>1</td>
-        </tr>
-
-    </tbody>
-
-    <tfoot>
-        <tr>
-            <!-- Add total label and total -->
-        </tr>
-    </tfoot>
-</table>
-
+            <tr>
+                <td>104</td>
+                <td>Divya</td>
+                <td>Computer Science</td>
+                <td>88</td>
+            </tr>
+        </table>
+    </div>
 </body>
-</html
+</html>
